@@ -12,6 +12,7 @@ pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+dataPass.json
 
 # OS
 .DS_Store
@@ -42,6 +43,7 @@ backend/.nyc_output
 .env.test.local
 .env.production.local
 .env.local
+backend/.env
 
 # temp directory
 .temp
