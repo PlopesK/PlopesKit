@@ -1,0 +1,60 @@
+# Arquivos e pastas gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs e arquivos temporários
+*.log
+logs/
+*.tmp
+tmp/
+*.swp
+*.swo
+
+# Diretórios de dependências
+node_modules/
+bower_components/
+vendor/
+
+# Arquivos gerados por compiladores
+/dist
+/build
+/out
+
+# Arquivos e pastas do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos compilados do Java
+*.class
+
+# Configurações de ambiente virtual do Python
+venv/
+env/
+ENV/
+.venv/
+
+# Arquivos e pastas de IDEs / Editores de texto
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.iml
+.project
+.settings/
+*.tmproj
+.prettierrc
+
+# Arquivos de configuração e cache do macOS
+.AppleDouble
+.LSOverride
+
+# Arquivos de backup
+*~
+*.bak
+*.backup
+.prettierrc
