@@ -1,60 +1,57 @@
-# Arquivos e pastas gerados pelo sistema operacional
-.DS_Store
-Thumbs.db
-ehthumbs.db
-desktop.ini
+# compiled output
+backend/dist/
+backend/node_modules/
+backend/build/
+backend/test
 
-# Logs e arquivos temporários
+# Logs
+logs
 *.log
-logs/
-*.tmp
-tmp/
-*.swp
-*.swo
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Diretórios de dependências
-node_modules/
-bower_components/
-vendor/
+# OS
+.DS_Store
 
-# Arquivos gerados por compiladores
-/dist
-/build
-/out
+# Tests
+backend/coverage
+backend/.nyc_output
 
-# Arquivos e pastas do Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Arquivos compilados do Java
-*.class
-
-# Configurações de ambiente virtual do Python
-venv/
-env/
-ENV/
-.venv/
-
-# Arquivos e pastas de IDEs / Editores de texto
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.iml
+# IDEs and editors
+/.idea
 .project
+.classpath
+.c9/
+*.launch
 .settings/
-*.tmproj
-.prettierrc
+*.sublime-workspace
 
-# Arquivos de configuração e cache do macOS
-.AppleDouble
-.LSOverride
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Arquivos de backup
-*~
-*.bak
-*.backup
-.prettierrc
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# temp directory
+.temp
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
