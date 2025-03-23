@@ -20,6 +20,21 @@ model Tecnologia {
   descricao String
   imagem String
   destaque Boolean @default(false)
+  projetos Projeto[]
 
   @@map("tecnologias")
+}
+
+model Projeto {
+  id       Int     @id @default(autoincrement())
+  nome   String
+  descricao String
+  tipo String
+  imagens String[]
+  nivel Int
+  repositorio String
+  destaque Boolean @default(false)
+  tecnologias Tecnologia[]
+
+  @@map("projetos")
 }
