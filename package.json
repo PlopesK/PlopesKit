@@ -1,0 +1,21 @@
+{
+    "name": "plopeskit",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/PlopesK/PlopesKit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/PlopesK/PlopesKit/issues"
+    },
+    "homepage": "https://github.com/PlopesK/PlopesKit#readme",
+    "description": ""
+  }
+  
