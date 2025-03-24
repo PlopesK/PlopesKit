@@ -18,6 +18,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
+			<head>
+				<meta charSet="utf-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<link rel="icon" href="https://avatars.githubusercontent.com/u/101651798?v=4" />
+			</head>
 			<body className={`${fonte.className} antialiased`}>{children}</body>
 		</html>
 	)
