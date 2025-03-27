@@ -1,15 +1,24 @@
 "use client"
 import { useEffect, useState } from "react"
 
-export default function useLocalStorage<T>(chave: string, valorInicial: T) {
-	const [valor, setValor] = useState<T>(() => {
-		const valorLocal = localStorage.getItem(chave)
-		return valorLocal ? JSON.parse(valorLocal) : valorInicial
-	})
+export default function useLocalStorage<T>(key: string, initialValue: T) {
+  const [value, setValue] = useState<T>(() => {
+    try {
+      const storedValue = localStorage.getItem(key)
+      return storedValue ? JSON.parse(storedValue) : initialValue
+    } catch (error) {
+      console.error("Error parsing local storage value:", error)
+      return initialValue
+    }
+  })
 
-	useEffect(() => {
-		localStorage.setItem(chave, JSON.stringify(valor))
-	}, [chave, valor])
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value))
+    } catch (error) {
+      console.error("Error setting local storage value:", error)
+    }
+  }, [key, value])
 
-	return [valor, setValor] as const
+  return [value, setValue] as const
 }

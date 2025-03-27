@@ -17,7 +17,7 @@ export default function CarrosselImagens(props: CarrosselImagensProps) {
 			<CarouselContent>
 				{props.imagens.map((imagem) => (
 					<CarouselItem key={imagem} className="relative h-96 w-full">
-						<Image src={imagem} alt="Imagem" fill className="object-cover" />
+						<Image src={imagem} alt="Imagem" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
 					</CarouselItem>
 				))}
 			</CarouselContent>

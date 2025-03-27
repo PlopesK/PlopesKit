@@ -19,6 +19,7 @@ export default function ItemProjeto(props: ItemProjetoProps) {
 					src={props.projeto.imagens[0]}
 					alt={props.projeto.nome}
 					fill
+					sizes="(max-width: 768px) 100vw, 50vw" // Adjust as necessary
 				/>
 			</div>
 		</Link>
