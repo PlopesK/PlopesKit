@@ -22,7 +22,6 @@ export default function Tecnologias(props: TecnologiasProps) {
 							alt={tecnologia.nome}
 							fill
 							className="object-contain"
-							sizes="(max-width: 768px) 100vw, 50vw" // Adjust as necessary
 						/>
 					</span>
 					<span className="text-[10px] text-zinc-400">{tecnologia.nome}</span>

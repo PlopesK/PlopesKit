@@ -9,7 +9,7 @@ export interface CurriculoProps {
 
 export default function Curriculo(props: CurriculoProps) {
 	return (
-		<div className="flex flex-col lg:flex-row gap-4 min-h-72 w-full">
+		<div className="flex flex-col gap-4 min-h-72 w-full">
 			<MiniCV />
 			<Experiencia />
 			<TecnologiasTrabalhadas lista={props.tecnologias} />

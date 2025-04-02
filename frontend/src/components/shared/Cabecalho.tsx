@@ -9,7 +9,12 @@ export default function Cabecalho() {
 			<Container className="flex-1 flex justify-center sm:justify-between items-center">
 				<div className="flex items-center gap-10">
 					<Link href="/" className="hidden sm:block">
-						<Image src="https://avatars.githubusercontent.com/u/101651798?v=4" alt="Logo" width={80} height={80} sizes="(max-width: 768px) 100vw, 50vw" />
+						<Image 
+							className="rounded-4xl"
+							src="https://avatars.githubusercontent.com/u/101651798?v=4" 
+							alt="Logo" 
+							sizes="(max-width: 768px) 50vw, 20vw" 
+						 />
 					</Link>
 					<Menu />
 				</div>
@@ -17,7 +22,8 @@ export default function Cabecalho() {
 					<Link
 						href="https://github.com/PlopesK"
 						target="_blank"
-						className="bg-red-500 rounded-full px-7 py-1 text-sm font-bold"
+						className="bg-red-500 rounded-full px-7 py-1 text-sm font-bold 
+						hover:cursor-pointer hover:bg-red-800"
 					>
 						Perfil
 					</Link>
