@@ -14,6 +14,10 @@ export interface ProjetosProps {
 }
 
 export default function Projetos(props: ProjetosProps) {
+	if (!props.lista || props.lista.length === 0) {
+		return <div>No projects available.</div>;
+	}
+
 	return (
 		<div className="flex flex-col items-center sm:items-start w-7/10 md:w-11/12 xl:w-full gap-5">
 			<h3 className="text-2xl font-bold text-white/70">{props.titulo}</h3>
@@ -38,5 +42,5 @@ export default function Projetos(props: ProjetosProps) {
 				<CarouselNext />
 			</Carousel>
 		</div>
-	)
+	);
 }
