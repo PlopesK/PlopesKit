@@ -5,9 +5,9 @@ import CarrosselImagens from "@/components/shared/CarrosselImagens"
 import Container from "@/components/shared/Container"
 import Readme from "@/components/projetos/Readme"
 import Tecnologias from "@/components/tecnologias/Tecnologias"
+import { PageProps } from "next"
 
-export default async function PaginaProjeto(props: { params: { id: string } }) {
-	const params = await props.params
+export default async function PaginaProjeto({ params }: PageProps<{ id: string }>) {
 	const { id } = params
 	const projeto = await obterProjeto(id)
 
